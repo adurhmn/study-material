@@ -24,6 +24,25 @@ const appEl = document.getElementById('app');
 document.getElementById('home-btn').addEventListener('click', () => navigate('home'));
 document.getElementById('bookmarks-btn').addEventListener('click', () => navigate('bookmarks'));
 
+// Timetable Modal Controls
+const timetableModal = document.getElementById('timetable-modal');
+const timetableBtn = document.getElementById('timetable-btn');
+const closeModalBtn = document.getElementById('close-modal-btn');
+
+timetableBtn.addEventListener('click', () => {
+  timetableModal.classList.remove('hidden');
+});
+
+closeModalBtn.addEventListener('click', () => {
+  timetableModal.classList.add('hidden');
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === timetableModal) {
+    timetableModal.classList.add('hidden');
+  }
+});
+
 function navigate(view, subject = null, category = null) {
   currentView = view;
   activeSubject = subject;
@@ -94,7 +113,6 @@ function renderSubject() {
       <button onclick="navigate('home')">← Back to Subjects</button>
       <h2>${activeSubject.title}</h2>
     </div>
-    <p class="source-files"><strong>Source Files:</strong><br>${activeSubject.files.join('<br>')}</p>
   `;
   appEl.appendChild(header);
 
