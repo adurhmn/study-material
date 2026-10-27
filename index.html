@@ -10,6 +10,7 @@
   <header>
     <h1 id="home-btn" tabindex="0" title="Return to Home">📚 Study Portal</h1>
     <div class="header-controls">
+      <button id="timetable-btn" aria-label="View Exam Timetable">📅 Timetable</button>
       <button id="bookmarks-btn" aria-label="View Bookmarks">⭐ Bookmarks</button>
       <button id="theme-btn" aria-label="Toggle Dark Mode">🌓</button>
     </div>
@@ -19,7 +20,64 @@
     <!-- Content injected dynamically via app.js -->
   </main>
 
-  <!-- Load Data and App Logic -->
+  <!-- Timetable Modal -->
+  <div id="timetable-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-title">📅 Exam Timetable</h2>
+        <button class="close-btn" id="close-modal-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="table-container">
+          <table class="timetable">
+            <thead>
+              <tr>
+                <th>Date & Session</th>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>03-11-2026 FN</strong>[cite: 16]</td>
+                <td>*IIILT(9), *IIILH(8), *IIILF(8), *IIILA(8), *IIILS(8) &amp; *IIILU(8)[cite: 16]</td>
+                <td>Foundation Course - Language Tamil / Hindi / French / Arabic / Sanskrit / Urdu - Paper III[cite: 16]</td>
+              </tr>
+              <tr>
+                <td><strong>06-11-2026 FN</strong>[cite: 16]</td>
+                <td>DIIIFE(7)[cite: 16]</td>
+                <td>Foundation course in English: Progressive English[cite: 16]</td>
+              </tr>
+              <tr>
+                <td><strong>12-11-2026 FN</strong>[cite: 16]</td>
+                <td>OIIIC3(8)[cite: 16]</td>
+                <td>Core 3 - Biochemical Techniques[cite: 16]</td>
+              </tr>
+              <tr>
+                <td><strong>17-11-2026 FN</strong>[cite: 16]</td>
+                <td>GIIIAE5(8) / IIIIZ3(8)[cite: 16]</td>
+                <td>Allied - Allied Chemistry - I / Allied Vocational Biotechnology 3 - Environmental Biotechnology[cite: 16]</td>
+              </tr>
+              <tr>
+                <td><strong>20-11-2026 FN</strong>[cite: 16]</td>
+                <td>OIIICE1A(8) / IIIIZCE1B(8)[cite: 16]</td>
+                <td>Core Elective 1 - Microbiology and Pharmacology / Core Elective 1 - Vocational Biotechnology - Microbiology[cite: 16]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="timetable-subtext">Optional: Save the original image as <code>timetable.png</code> in the same folder to view it as an image.</p>
+        <div id="image-viewer-fallback">
+          <a href="IMG_2470.PNG" target="_blank" class="view-image-link">🔗 Open Original Timetable Image</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-note">All the best, papa ❤️</p>
+  </footer>
+
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
