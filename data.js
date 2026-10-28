@@ -1,6 +1,6 @@
 const db = [
   {
-    title: "Allied Chemistry – I",
+    title: "Allied Chemistry – I - GIIIAE5(8)",
     code: "CHEM1",
     files: [
       "Allied_Chemistry_I_2_Mark_Answers.docx", 
@@ -76,7 +76,7 @@ const db = [
     ]
   },
   {
-    title: "Progressive English",
+    title: "English - DIIIFE",
     code: "DIIIFE",
     files: [
       "DIIIFE_Cleaned_2_Mark_Revision_Bank.docx", 
@@ -221,7 +221,7 @@ const db = [
     ]
   },
   {
-    title: "Foundation Course Language Arabic",
+    title: "Arabic - IIILA",
     code: "IIILA",
     files: [
       "IIILA_2_Mark_Questions_Answers_Cleaned.docx",
@@ -370,7 +370,7 @@ const db = [
     ]
   },
   {
-    title: "Microbiology and Pharmacology",
+    title: "Microbiology and Pharmacology - OIIICEIA",
     code: "MICRO_PHARMA",
     files: [
       "Microbiology_Pharmacology_2_Mark_QA_Formatted.docx",
@@ -664,7 +664,7 @@ const db = [
     ]
   },
   {
-    title: "OIIIC3",
+    title: "Biochemical Techniques - OIIIC3",
     code: "OIIIC3",
     files: [
       "OIIIC3_2_Mark_Questions_Answers.docx",
